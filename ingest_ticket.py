@@ -35,7 +35,7 @@ def load_ticket_documents(dp_path: str) -> list[Document]:
         docs.append(Document(
             page_content=content,
             metadata={
-                "source":    "ticket",
+                "source":    "tickets",
                 "ticket_id": row["ticket_id"],
                 "category":  row["category"],
                 "status":    row["status"],
