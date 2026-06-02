@@ -5,7 +5,7 @@ An intelligent, context-aware Retrieval-Augmented Generation (RAG) assistant des
 The system leverages a multi-vector store pipeline to pull context from three separate data streams: static FAQs, a comprehensive PDF technical guide, and historic resolved support tickets.
 
 ## 🛠️ Architecture Summary
-- **LLM Engine:** Qwen3-32B via Groq Cloud
+- **LLM Engine:** llama-3.1-8b-instant via Groq Cloud
 - **Embedding Model:** `sentence-transformers/all-MiniLM-L6-v2` (via Hugging Face)
 - **Vector Database:** Chroma DB
 - **Framework:** LangChain (LCEL)

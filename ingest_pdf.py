@@ -36,8 +36,10 @@ def main():
     chunks = splitter.split_documents(pages)
 
     for i, chunk in enumerate(chunks):
+        page_num = chunk.metadata.get("page", 0)
         chunk.metadata["source"] = "guide"
         chunk.metadata["chunk_index"] = i
+        chunk.metadata["page_number"] = page_num + 1  # Standardize to 1-indexed for reader readability
 
     print(f"{len(chunks)} chunks produced")
 
